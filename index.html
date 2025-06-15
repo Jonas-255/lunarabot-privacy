@@ -1,77 +1,76 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Datenschutzerklärung</title>
+  <meta charset="UTF-8">
+  <title>Datenschutzerklärung – LunaRaeBot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: sans-serif;
+      margin: 0 auto;
       max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
+      padding: 2rem;
       line-height: 1.6;
-      background-color: #fdfdfd;
-      color: #333;
     }
     h1, h2 {
-      color: #2c3e50;
+      color: #1a1a1a;
     }
     form {
-      margin-top: 2em;
-      background-color: #f4f4f4;
-      padding: 1em;
+      background: #f7f7f7;
+      padding: 1rem;
       border-radius: 8px;
+      margin-top: 1rem;
     }
     input, textarea {
       width: 100%;
-      padding: 0.5em;
-      margin-top: 0.5em;
-      border: 1px solid #ccc;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
       border-radius: 4px;
+      border: 1px solid #ccc;
     }
     button {
-      margin-top: 1em;
-      padding: 0.7em 1.5em;
-      background-color: #2c3e50;
-      color: white;
+      padding: 0.5rem 1rem;
+      background: #1a1a1a;
+      color: #fff;
       border: none;
       border-radius: 4px;
       cursor: pointer;
     }
     button:hover {
-      background-color: #1a242f;
+      background: #444;
     }
   </style>
 </head>
 <body>
-  <h1>Datenschutzerklärung</h1>
-  <p>
-    Diese Anwendung nutzt Facebook Login und die Instagram Graph API, um Nutzer zu authentifizieren
-    und automatisierte Nachrichten im Namen von <strong>@secretary_lunarae</strong> zu versenden.
-    Es werden nur die notwendigsten Daten verwendet (z. B. Benutzername, Profil-ID).
-    Diese Daten werden nicht gespeichert oder an Dritte weitergegeben.
-  </p>
-  <p>
-    Verantwortlich: Jonas Winkler <br />
-    Kontakt: <a href="mailto:secretary_lunarae@web.de">secretary_lunarae@web.de</a>
-  </p>
 
-  <h2>Datenlöschung</h2>
-  <p>
-    Du möchtest deine Daten löschen lassen? Nutze bitte dieses Formular:
-  </p>
+<h1>Datenschutzerklärung</h1>
 
-  <form action="https://formspree.io/f/mwkgyvrk" method="POST">
-    <label for="name">Name oder Instagram-Username</label>
-    <input type="text" id="name" name="name" required />
+<p>Diese Anwendung nutzt Facebook Login und die Instagram Graph API, um Nutzer zu authentifizieren und automatisierte Nachrichten im Namen von <strong>@secretary_lunarae</strong> zu versenden. Es werden nur die notwendigsten Daten verwendet (z. B. Benutzername, Profil-ID). Diese Daten werden nicht gespeichert oder an Dritte weitergegeben.</p>
 
-    <label for="message">Nachricht / Bitte zur Datenlöschung</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
+<h2>Verantwortlich</h2>
+<p>LunaRae<br>
+Kontakt: <a href="mailto:secretary_lunarae@web.de">secretary_lunarae@web.de</a></p>
 
-    <input type="email" name="_replyto" placeholder="Deine E-Mail-Adresse" required />
+<h2>Rechtsgrundlage der Datenverarbeitung</h2>
+<p>Die Verarbeitung der Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung bzw. zur Durchführung vorvertraglicher Maßnahmen auf Anfrage der betroffenen Person).</p>
 
-    <button type="submit">Absenden</button>
-  </form>
+<h2>Datenlöschung</h2>
+<p>Du möchtest deine Daten löschen lassen? Nutze bitte dieses Formular:</p>
+
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+  <label for="username">Name oder Instagram-Username</label>
+  <input type="text" name="username" id="username" required>
+
+  <label for="message">Nachricht / Bitte zur Datenlöschung</label>
+  <textarea name="message" id="message" rows="4" required></textarea>
+
+  <label for="email">Deine E-Mail-Adresse</label>
+  <input type="email" name="_replyto" id="email" required>
+
+  <input type="hidden" name="_captcha" value="true">
+  <button type="submit">Absenden</button>
+</form>
+
 </body>
 </html>
