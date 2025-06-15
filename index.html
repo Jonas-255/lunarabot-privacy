@@ -6,54 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: sans-serif;
       margin: 0 auto;
       max-width: 800px;
       padding: 2rem;
       line-height: 1.6;
-      background-color: #ffffff;
-      color: #1a1a1a;
     }
     h1, h2 {
       color: #1a1a1a;
     }
     form {
-      background: #f8f8f8;
+      background: #f7f7f7;
       padding: 1rem;
       border-radius: 8px;
       margin-top: 1rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    label {
-      font-weight: bold;
     }
     input, textarea {
       width: 100%;
-      margin-top: 0.25rem;
+      margin-top: 0.5rem;
       margin-bottom: 1rem;
       padding: 0.5rem;
       border-radius: 4px;
       border: 1px solid #ccc;
-      font-size: 1rem;
     }
     button {
-      padding: 0.6rem 1.2rem;
-      background: #333;
-      color: white;
+      padding: 0.5rem 1rem;
+      background: #1a1a1a;
+      color: #fff;
       border: none;
       border-radius: 4px;
       cursor: pointer;
-      font-size: 1rem;
     }
     button:hover {
-      background: #555;
+      background: #444;
     }
-    a {
-      color: #0055cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #555;
     }
   </style>
 </head>
@@ -61,27 +51,22 @@
 
 <h1>Datenschutzerklärung</h1>
 
-<p>
-Diese Anwendung nutzt Facebook Login und die Instagram Graph API, um Nutzer zu authentifizieren und automatisierte Nachrichten im Namen von <strong>@secretary_lunarae</strong> zu versenden. Es werden nur die notwendigsten Daten verwendet (z. B. Benutzername, Profil-ID). Diese Daten werden nicht gespeichert oder an Dritte weitergegeben.
-</p>
+<p>Diese Anwendung nutzt Facebook Login und die Instagram Graph API, um Nutzer zu authentifizieren und automatisierte Nachrichten im Namen von <strong>@secretary_lunarae</strong> zu versenden. Es werden nur die notwendigsten Daten verwendet (z. B. Benutzername, Profil-ID). Diese Daten werden nicht gespeichert oder an Dritte weitergegeben. Die Daten werden ausschließlich zur Kommunikation verwendet und nach Zweckerfüllung gelöscht.</p>
 
 <h2>Verantwortlich</h2>
-<p>
-LunaRae<br>
-Kontakt: <a href="mailto:secretary_lunarae@web.de">secretary_lunarae@web.de</a>
-</p>
+<p><strong>Verantwortlich:</strong> LunaRae<br>
+Kontakt: <a href="mailto:secretary_lunarae@web.de">secretary_lunarae@web.de</a></p>
 
 <h2>Rechtsgrundlage der Datenverarbeitung</h2>
-<p>
-Die Verarbeitung erfolgt auf Grundlage von <strong>Art. 6 Abs. 1 lit. b DSGVO</strong> (Vertragserfüllung bzw. Durchführung vorvertraglicher Maßnahmen).
-</p>
+<p>Die Verarbeitung erfolgt auf Grundlage von <strong>Art. 6 Abs. 1 lit. b DSGVO</strong> (Vertragserfüllung bzw. Durchführung vorvertraglicher Maßnahmen).</p>
+
+<h2>Betroffenenrechte</h2>
+<p>Du hast jederzeit das Recht auf Auskunft, Berichtigung oder Löschung deiner gespeicherten Daten. Wende dich dazu bitte per E-Mail an die oben genannte Kontaktadresse.</p>
 
 <h2>Datenlöschung</h2>
-<p>
-Du möchtest deine Daten löschen lassen? Nutze bitte dieses Formular:
-</p>
+<p>Du möchtest deine Daten löschen lassen? Nutze bitte dieses Formular:</p>
 
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<form action="https://formspree.io/f/xovwwebj" method="POST">
   <label for="username">Name oder Instagram-Username</label>
   <input type="text" name="username" id="username" required>
 
@@ -94,6 +79,10 @@ Du möchtest deine Daten löschen lassen? Nutze bitte dieses Formular:
   <input type="hidden" name="_captcha" value="true">
   <button type="submit">Absenden</button>
 </form>
+
+<footer>
+  <p>Hinweis: Diese Seite ist Teil eines privaten Projekts ohne kommerzielle Absicht. Angaben erfolgen gemäß §5 TMG auf freiwilliger Basis.</p>
+</footer>
 
 </body>
 </html>
